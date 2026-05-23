@@ -1,0 +1,15 @@
+{
+  "name": "supabase-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "vercel-build": "tsc"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.2.2"
+  }
+}
