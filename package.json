@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "npx tsc"
+    "vercel-build": "tsc"
   },
   "dependencies": {
-    "@vercel/node": "^5.8.4",
+    "@vercel/node": "5.2.0",
     "node-fetch": "^3.3.2",
-    "typescript": "^5.9.3"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.2.5"
+    "@types/node": "^18.16.18"
   }
 }
