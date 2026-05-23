@@ -8,13 +8,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const url = SUPABASE_URL + req.url;
 
   try {
+    const headers: Record<string, string> = {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      // при необходимости можно добавить другие строго string значения
+    };
+
     const response = await fetch(url, {
       method: req.method,
-      headers: {
-        ...req.headers,
-        apikey: SUPABASE_ANON_KEY,
-        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-      },
+      headers,
       body: req.method === "GET" ? undefined : req.body,
     });
 

@@ -6,6 +6,7 @@
     "vercel-build": "tsc"
   },
   "dependencies": {
+    "@vercel/node": "^5.8.4",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
